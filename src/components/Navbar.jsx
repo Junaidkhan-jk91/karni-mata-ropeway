@@ -26,7 +26,7 @@ export default function Navbar() {
         <a href="#" className="no-underline group" aria-label="Home">
           <span className="text-white text-base font-semibold leading-tight block tracking-wide
                            group-hover:text-copper-light transition-colors duration-300">
-            Manshapurn
+            🚡 Manshapurn
           </span>
           <span className="text-[10px] tracking-[3px] uppercase text-white/40 font-light">
             Karni Mata Ropeway

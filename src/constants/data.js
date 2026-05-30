@@ -80,17 +80,34 @@ export const GALLERY_CATEGORIES = [
 ];
 
 export const GALLERY_ITEMS = [
+  // Ropeway Category (8 Items)
   { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Gondola cabin and lake view', category: 'ropeway', tag: 'Ropeway', label: 'Vibrant gondola cabin soaring above the scenic foothills.', tall: true },
   { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Ropeway cable lines and cabins', category: 'ropeway', tag: 'Ropeway', label: 'Gondola passenger cabin gliding smoothly along the robust double-cable path.' },
   { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Aerial ropeway cabins passing', category: 'ropeway', tag: 'Ropeway', label: 'Passenger cabins passing each other mid-flight over the green valleys.' },
   { src: GALLERY_IMAGES_SRC.ropeway[3], alt: 'Ascending hilltop terminal', category: 'ropeway', tag: 'Ropeway', label: 'Mountaintop perspective of the gondolas ascending towards the Machala Hill summit station.' },
   { src: GALLERY_IMAGES_SRC.ropeway[4], alt: 'Detailed view of ropeway cabin', category: 'ropeway', tag: 'Ropeway', label: 'Close-up detail of the modern, robust red enclosed cabin design climbing the peaks.', tall: true },
+  { src: GALLERY_IMAGES_SRC.ropeway[5], alt: 'Gondola flight over Udaipur', category: 'ropeway', tag: 'Ropeway', label: 'Clean passenger cabin glide presenting standard heights over the foothill pathways.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[6], alt: 'Ropeway terminal cabins', category: 'ropeway', tag: 'Ropeway', label: 'Enclosed cable cabins arriving at the hilltop terminal station platforms.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[7], alt: 'Cable car under sky', category: 'ropeway', tag: 'Ropeway', label: 'A single red gondola cabin climbing through the blue sky against the hill crest.' },
+
+  // Temple Category (5 Items)
   { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Shri Manshapurn Karni Mata Temple Udaipur', category: 'temple', tag: 'Temple', label: 'Shri Manshapurn Karni Mata Temple standing proudly against the clear sky at the hill summit.' },
-  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for visitors and pilgrims.', tall: true },
-  { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Aravalli Hills view from temple', category: 'temple', tag: 'Temple', label: 'Lush green slopes and rolling hills of the ancient Aravalli Range as seen from the temple area.' },
+  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for pilgrims.', tall: true },
+  { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Aravalli Hills view from temple', category: 'temple', tag: 'Temple', label: 'Lush green slopes of the ancient Aravalli Range seen from the hilltop courtyard.' },
+  { src: GALLERY_IMAGES_SRC.temple[3], alt: 'White marble shrine Karni Mata', category: 'temple', tag: 'Temple', label: 'Peaceful white marble architecture and holy archways of the temple complex.' },
+  { src: GALLERY_IMAGES_SRC.temple[4], alt: 'Hilltop temple sunset pilgrims', category: 'temple', tag: 'Temple', label: 'Pilgrim assemblies gathering around the hilltop sacred complex in the soft evening light.', tall: true },
+
+  // City Views Category (10 Items)
   { src: GALLERY_IMAGES_SRC.views[0], alt: 'Scenic Udaipur overview Lake Pichola from top', category: 'views', tag: 'City views', label: 'Spectacular sunset view of Lake Pichola and the City Palace from the top ropeway platform.' },
   { src: GALLERY_IMAGES_SRC.views[1], alt: 'Waterfront City Palace ghats Lake Pichola', category: 'views', tag: 'City views', label: 'Sunset reflections kissing the water along the waterfront ghats and Aravalli horizons.' },
   { src: GALLERY_IMAGES_SRC.views[2], alt: 'Birdseye view of Lake Pichola and Udaipur skyline', category: 'views', tag: 'City views', label: 'Panoramic aerial view of a gondola passenger cabin gliding over Doodh Talai Lake and the base gardens.' },
+  { src: GALLERY_IMAGES_SRC.views[3], alt: 'Lake Pichola Palace layout', category: 'views', tag: 'City views', label: 'Stunning overhead city perspective focusing on Taj Lake Palace and historical domes.', tall: true },
+  { src: GALLERY_IMAGES_SRC.views[4], alt: 'Aravalli horizon sun ray', category: 'views', tag: 'City views', label: 'Glistening water waves of Lake Pichola reflection under the fading afternoon sun rays.' },
+  { src: GALLERY_IMAGES_SRC.views[5], alt: 'Udaipur white city panoramic rooftops', category: 'views', tag: 'City views', label: 'White architectural rooftops and heritage blocks outlining the historic City Palace perimeter.' },
+  { src: GALLERY_IMAGES_SRC.views[6], alt: 'Lake Pichola wide shoreline view', category: 'views', tag: 'City views', label: 'Wide scenic overlook focusing on the pristine blue waters of Lake Pichola and remote hills.', tall: true },
+  { src: GALLERY_IMAGES_SRC.views[7], alt: 'Sajjangarh Monsoon Palace view', category: 'views', tag: 'City views', label: 'Distant view of Sajjangarh Monsoon Palace sitting atop Aravalli peaks under golden clouds.' },
+  { src: GALLERY_IMAGES_SRC.views[8], alt: 'Old city rooftops close view', category: 'views', tag: 'City views', label: 'Fascinating details of old city structural networks and whitewashed domes.' },
+  { src: GALLERY_IMAGES_SRC.views[9], alt: 'Sunset water palace reflection', category: 'views', tag: 'City views', label: 'Romantic sunset glow kissing the water palaces and mountain ridges in the distance.' },
 ];
 
 /* ─── Tickets ─── */
