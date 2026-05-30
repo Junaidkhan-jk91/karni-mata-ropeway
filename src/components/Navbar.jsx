@@ -79,6 +79,7 @@ export default function Navbar() {
         className={`fixed inset-0 z-40 bg-charcoal/95 backdrop-blur-xl
                     flex flex-col items-center justify-center gap-6
                     transition-all duration-500 md:hidden
+                    overflow-y-auto py-20 px-6
                     ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         role="menu"
         onClick={closeMenu}
