@@ -19,7 +19,6 @@ function TicketCard({ category, type, price, note, index }) {
       data-aos-delay={index * 100}
       data-aos-duration="700"
     >
-      {/* Top gradient accent on hover */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r
                       from-copper via-copper-light to-sage-light
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -43,7 +42,6 @@ export default function Tickets() {
   return (
     <section id="tickets" className="py-20 sm:py-24 px-6 sm:px-10 lg:px-16 bg-ivory">
       <div className="max-w-5xl mx-auto">
-        {/* Header */}
         <div className="max-w-2xl mb-12">
           <div className="flex items-center gap-3 mb-4" data-aos="fade-right" data-aos-duration="600">
             <span className="w-10 h-px bg-copper" />
@@ -65,14 +63,12 @@ export default function Tickets() {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
           {TICKETS.map(({ category, type, price, note }, index) => (
             <TicketCard key={`${category}-${type}`} category={category} type={type} price={price} note={note} index={index} />
           ))}
         </div>
 
-        {/* Cabin note */}
         <div
           className="mt-8 bg-sage-pale rounded-2xl px-6 py-5 flex items-start gap-4
                         border border-sage-light/30 max-w-2xl"

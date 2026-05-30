@@ -1,10 +1,3 @@
-/**
- * @component App
- * Root component composing all sections. Redesigned layout flow
- * with smooth visual transitions between sections.
- * Enhanced with AOS scroll-reveal animations and tsParticles backgrounds.
- */
-
 import { useCallback, useEffect } from 'react';
 import AOS from 'aos';
 import { ParticlesProvider } from '@tsparticles/react';
@@ -13,6 +6,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import About from './components/About';
+import RopewayExperience from './components/RopewayExperience';
 import Highlights from './components/Highlights';
 import Gallery from './components/Gallery';
 import Tickets from './components/Tickets';
@@ -41,6 +35,7 @@ export default function App() {
       <Hero />
       <Stats />
       <About />
+      <RopewayExperience />
       <Highlights />
       <Gallery />
       <Tickets />

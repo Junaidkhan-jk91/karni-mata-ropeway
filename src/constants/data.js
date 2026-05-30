@@ -92,13 +92,11 @@ export const GALLERY_ITEMS = [
 
 /* ─── Tickets ─── */
 export const TICKETS = [
-  { category: 'Indian', type: 'Adult', price: 72, note: 'Per person, round trip' },
-  { category: 'Indian', type: 'Child', price: 36, note: 'Per child, round trip' },
-  { category: 'Foreign national', type: 'Adult', price: 300, note: 'Per person, round trip' },
-  { category: 'Foreign national', type: 'Child', price: 150, note: 'Per child, round trip' },
+  { category: 'Round Trip', type: 'Adult Ticket', price: 117, note: 'Above 110 cm height limit' },
+  { category: 'Round Trip', type: 'Child Ticket', price: 55, note: 'Height limit up to 110 cm' },
 ];
 
-export const TICKET_SUBTITLE = 'All fares are per person, round trip, unless noted.';
+export const TICKET_SUBTITLE = 'Fares are per person, round trip. Children above 110 cm are charged the adult rate.';
 
 export const CABIN_NOTE = {
   label: 'Full cabin booking:',
