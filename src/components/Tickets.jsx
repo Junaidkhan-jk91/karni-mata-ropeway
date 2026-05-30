@@ -63,7 +63,7 @@ export default function Tickets() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {TICKETS.map(({ category, type, price, note }, index) => (
             <TicketCard key={`${category}-${type}`} category={category} type={type} price={price} note={note} index={index} />
           ))}

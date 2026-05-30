@@ -33,7 +33,8 @@ export const ABOUT = {
   title: 'A journey of',
   titleEmphasis: 'faith & wonder',
   paragraphs: [
-    'The Mansapurna Karni Mata Ropeway connects Deendayal Upadhyay Park to the revered Karni Mata Temple perched atop Machala Hill — transforming what was once an arduous climb into a five-minute flight over Udaipur\u2019s shimmering lakes and royal skyline.',
+    'The Karni Mata Ropeway is one of the highlights during a visit to Udaipur, the so-called \u201cCity of Lakes\u201d in Rajasthan, India. This ropeway will take you to the top of Machhala Hill, where you will find the Manshapurn Karni Mata Temple as well as a spectacular view over Udaipur.',
+    'The ropeway connects Deendayal Upadhyay Park to the revered temple atop Machala Hill \u2014 transforming what was once an arduous climb into a five-minute flight over Udaipur\u2019s shimmering lakes and royal skyline.',
     'Built in 2008 under the vision of founder Kailash Khandelwal in collaboration with UIT, it holds the distinction of being Rajasthan\u2019s first gondola ropeway, blending modern engineering with centuries of devotion.',
   ],
   cards: [
@@ -79,24 +80,26 @@ export const GALLERY_CATEGORIES = [
 ];
 
 export const GALLERY_ITEMS = [
-  { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Karni Mata Ropeway gondola Udaipur', category: 'ropeway', tag: 'Ropeway', label: 'Gondola gliding over Udaipur', tall: true },
-  { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Karni Mata cable car Udaipur', category: 'ropeway', tag: 'Ropeway', label: 'Cable car above the city' },
-  { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Mansapurna Karni Mata Ropeway scenic ride', category: 'ropeway', tag: 'Ropeway', label: 'Scenic aerial ride' },
-  { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Karni Mata Temple entrance Udaipur', category: 'temple', tag: 'Temple', label: 'Karni Mata Temple entrance' },
-  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Sacred shrine atop Machala Hill', tall: true },
-  { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Karni Mata Temple premises Udaipur', category: 'temple', tag: 'Temple', label: 'Temple premises and views' },
-  { src: GALLERY_IMAGES_SRC.views[0], alt: 'Lake Pichola Udaipur panorama', category: 'views', tag: 'City views', label: 'Lake Pichola from above' },
-  { src: GALLERY_IMAGES_SRC.views[1], alt: 'City Palace from Lake Pichola Udaipur', category: 'views', tag: 'City views', label: 'City Palace & Lake Pichola' },
-  { src: GALLERY_IMAGES_SRC.views[2], alt: 'Udaipur Lake Pichola golden sunset', category: 'views', tag: 'City views', label: 'Golden sunset over the lake' },
+  { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Red gondola cabin Udaipur Karni Mata Ropeway', category: 'ropeway', tag: 'Ropeway', label: 'A vibrant red gondola cabin gliding smoothly over the slopes with the city skyline of Udaipur stretching behind.', tall: true },
+  { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Manshapurn Karni Mata cable car ascending', category: 'ropeway', tag: 'Ropeway', label: 'Aerial view of a cabin ascending along the robust double-cable line towards the hilltop station.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Lush green Aravalli hills Karni Mata Ropeway', category: 'ropeway', tag: 'Ropeway', label: 'Panoramic landscape of the lush green slopes of the ancient Aravalli hills, viewed directly underneath the wire path.' },
+  { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Shri Manshapurn Karni Mata Temple Udaipur', category: 'temple', tag: 'Temple', label: 'Shri Manshapurn Karni Mata Temple standing proudly against the clear sky at the hill summit.' },
+  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for visitors and pilgrims.', tall: true },
+  { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Aravalli Hills view from temple', category: 'temple', tag: 'Temple', label: 'Lush green slopes and rolling hills of the ancient Aravalli Range as seen from the temple area.' },
+  { src: GALLERY_IMAGES_SRC.views[0], alt: 'Scenic Udaipur overview Lake Pichola from top', category: 'views', tag: 'City views', label: 'Spectacular sunset view of Lake Pichola and the City Palace from the top ropeway platform.' },
+  { src: GALLERY_IMAGES_SRC.views[1], alt: 'Waterfront City Palace ghats Lake Pichola', category: 'views', tag: 'City views', label: 'Sunset reflections kissing the water along the waterfront ghats and Aravalli horizons.' },
+  { src: GALLERY_IMAGES_SRC.views[2], alt: 'Birdseye view of Lake Pichola and Udaipur skyline', category: 'views', tag: 'City views', label: 'Panoramic aerial view of a gondola passenger cabin gliding over Doodh Talai Lake and the base gardens.' },
 ];
 
 /* ─── Tickets ─── */
 export const TICKETS = [
-  { category: 'Round Trip', type: 'Adult Ticket', price: 117, note: 'Above 110 cm height limit' },
-  { category: 'Round Trip', type: 'Child Ticket', price: 55, note: 'Height limit up to 110 cm' },
+  { category: 'Indian National', type: 'Adult Ticket', price: 117, note: 'Above 110 cm height limit' },
+  { category: 'Indian National', type: 'Child Ticket', price: 55, note: 'Height limit up to 110 cm' },
+  { category: 'Foreign National', type: 'Adult Ticket', price: 300, note: 'Round trip, per person' },
+  { category: 'Foreign National', type: 'Child Ticket', price: 150, note: 'Round trip, per child' },
 ];
 
-export const TICKET_SUBTITLE = 'Fares are per person, round trip. Children above 110 cm are charged the adult rate.';
+export const TICKET_SUBTITLE = 'All fares are round trip. Indian tickets require height verification; Foreign national pricing includes international tourist rates.';
 
 export const CABIN_NOTE = {
   label: 'Full cabin booking:',
@@ -127,7 +130,7 @@ export const TIMINGS = [
 ];
 
 export const TIMING_TIP =
-  '✦ Best time: Early morning for serenity, or evening for magical sunset views over Lake Pichola.';
+  '✦ Operational Tip: Best visited around 5:30 PM to catch the spectacular sunset over Lake Pichola, but buy your tickets early to secure your queue number and avoid long sunset waits!';
 
 /* ─── Contact ─── */
 export const CONTACT = {
@@ -155,32 +158,30 @@ export const CONTACT = {
 /* ─── Getting Here ─── */
 export const GETTING_HERE = [
   {
-    icon: '📍',
-    label: 'Starting point',
-    value: 'Deen Dayal Park, Doodh Talai, Udaipur — 3 km from City Railway Station',
+    icon: '🛺',
+    label: 'Location & Taxi Options',
+    value: 'The ropeway starts at Manikyalal Verma Park, located just 1.5 km (0.9 mi) from the City Palace. Easily reach it by auto-rickshaw or scooter. We recommend downloading the Ola app for instant, fair taxi and rickshaw pricing!',
   },
   {
-    icon: '🏔️',
-    label: 'Destination',
-    value: 'Karni Mata Temple, Machala Magra Hilltop, above Dudh Talai Lake',
-  },
-  {
-    icon: '🚗',
-    label: 'Nearby',
-    value:
-      'Short auto-rickshaw or cab ride from Udaipur\u2019s main ghats, City Palace, and Lake Pichola',
+    icon: '🥾',
+    label: 'Scenic Walking Path',
+    value: 'For an active alternative to the 5-minute gondola ride, there is a scenic trail starting at Pandit Deendayal Upadhyay Park (Deen Dayal Park) that reaches the hilltop in 15–20 minutes.',
   },
   {
     icon: '🪜',
-    label: 'Alternate route',
-    value:
-      'Staircase access via Manik Lal Verma Park (15–20 min climb) for those who prefer to walk',
+    label: 'Hilltop Stair Climb',
+    value: 'After the gondola drops you at the top station, it is a short, few-minute walk up stone steps to reach the main shrine and the magnificent sunset viewing terraces.',
+  },
+  {
+    icon: '🌅',
+    label: 'Views & Precautions',
+    value: 'Witness spectacular panoramas of Lake Pichola, the City Palace, and Aravalli Hills from the top. Be mindful of active local monkeys—keep snacks and shiny items zipped in your bag!',
   },
 ];
 
 /* ─── Footer ─── */
 export const FOOTER = {
-  logoText: 'Mansapurna Karni Mata Ropeway',
+  logoText: 'Manshapurn Karni Mata Ropeway',
   address: ['Deen Dayal Park, Doodh Talai', 'Udaipur, Rajasthan 313001', 'India'],
   enquiryLabel: 'For enquiries',
   phone: '98294 66365',
@@ -188,5 +189,5 @@ export const FOOTER = {
   hours: 'Mon–Sun · 9:00 AM – 9:00 PM',
   mapsUrl: EXTERNAL_LINKS.googleMaps,
   copyright:
-    '© 2025 Mansapurna Karni Mata Ropeway Pvt. Ltd. · Rajasthan\u2019s first gondola ropeway, est. 2008',
+    '© 2025 Manshapurn Karni Mata Ropeway Pvt. Ltd. · Rajasthan\u2019s first gondola ropeway, est. 2008',
 };

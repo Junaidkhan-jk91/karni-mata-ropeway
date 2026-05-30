@@ -8,86 +8,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { GALLERY_CATEGORIES, GALLERY_ITEMS } from '../constants/data';
 import ParticlesBackground from './ParticlesBackground';
-
-function GalleryItem({ item, onOpen, index }) {
-  const { src, alt, tag, label, tall } = item;
-
-  return (
-    <div
-      className={`relative overflow-hidden cursor-pointer rounded-2xl group
-                  bg-stone/30 aspect-[4/3]
-                  ${tall ? 'md:row-span-2 md:!aspect-auto' : ''}
-                  max-md:!row-span-1 max-md:!aspect-[4/3]`}
-      onClick={() => onOpen(item)}
-      role="button"
-      tabIndex={0}
-      aria-label={`View photo: ${label}`}
-      onKeyDown={(e) => e.key === 'Enter' && onOpen(item)}
-      data-aos="zoom-in"
-      data-aos-delay={index * 80}
-      data-aos-duration="600"
-    >
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className="w-full h-full object-cover
-                   transition-transform duration-700 ease-out
-                   group-hover:scale-110"
-      />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent
-                      opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                      flex items-end p-5">
-        <div>
-          <span className="inline-block px-3 py-1 rounded-full bg-copper/80 text-white
-                          text-[10px] tracking-[1.5px] uppercase font-semibold mb-2">
-            {tag}
-          </span>
-          <p className="text-white text-sm font-light leading-snug">{label}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Lightbox({ image, onClose }) {
-  if (!image) return null;
-
-  return (
-    <div
-      className="fixed inset-0 bg-charcoal/95 backdrop-blur-lg z-[9999]
-                 flex items-center justify-center flex-col p-6"
-      onClick={(e) => e.target === e.currentTarget && onClose()}
-      role="dialog"
-      aria-modal="true"
-      aria-label="Image lightbox"
-    >
-      <button
-        className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10
-                   flex items-center justify-center text-white text-lg
-                   cursor-pointer border-none hover:bg-white/20 transition-colors"
-        onClick={onClose}
-        aria-label="Close lightbox"
-      >
-        ✕
-      </button>
-      <img
-        src={image.src}
-        alt={image.alt}
-        className="max-w-[90vw] max-h-[80vh] object-contain rounded-xl
-                   shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
-      />
-      <div className="mt-5 text-center">
-        <span className="inline-block px-3 py-1 rounded-full bg-copper/20
-                        text-copper-light text-[10px] tracking-[1.5px] uppercase font-semibold">
-          {image.tag}
-        </span>
-        <p className="mt-2 text-white/50 text-sm font-light">{image.label}</p>
-      </div>
-    </div>
-  );
-}
+import GalleryItem from './GalleryItem';
+import Lightbox from './Lightbox';
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('all');

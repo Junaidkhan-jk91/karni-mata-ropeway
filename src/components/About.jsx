@@ -65,7 +65,7 @@ export default function About() {
                 data-aos="fade-up"
                 data-aos-delay={200 + i * 100}
               >
-                {i === 1 ? (
+                {para.includes('first gondola ropeway') ? (
                   <>
                     {para.split('Rajasthan\u2019s first gondola ropeway')[0]}
                     <strong className="font-medium text-charcoal">

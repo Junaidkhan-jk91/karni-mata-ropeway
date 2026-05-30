@@ -1,21 +1,14 @@
-/**
- * @component Footer
- * Centered minimal footer with contact pills and copyright.
- * Enhanced with AOS scroll-reveal animations.
- */
-
 import { FOOTER } from '../constants/data';
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal px-6 sm:px-10 lg:px-16 pt-14 pb-8">
+    <footer className="bg-black px-6 sm:px-10 lg:px-16 pt-14 pb-8 border-t border-zinc-900">
       <div className="max-w-5xl mx-auto">
-        {/* Branding */}
         <div className="text-center mb-10" data-aos="fade-up" data-aos-duration="700">
-          <div className="text-xl sm:text-2xl text-copper-light font-semibold mb-3 tracking-wide">
+          <div className="text-xl sm:text-2xl text-white font-bold mb-3 tracking-wide uppercase">
             {FOOTER.logoText}
           </div>
-          <address className="text-sm text-white/30 leading-[1.8] font-light not-italic">
+          <address className="text-sm text-zinc-300 leading-[1.8] font-light not-italic">
             {FOOTER.address.map((line, i) => (
               <span key={i}>
                 {line}
@@ -25,33 +18,27 @@ export default function Footer() {
           </address>
         </div>
 
-        {/* Contact row */}
-        <div className="flex items-center justify-center gap-4 flex-wrap mb-10" data-aos="fade-up" data-aos-delay="100">
+        <div className="flex items-center justify-center gap-6 flex-wrap mb-10 text-sm" data-aos="fade-up" data-aos-delay="100">
           <a
             href={FOOTER.phoneHref}
-            className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/[0.08]
-                       px-5 py-2.5 rounded-xl text-sm text-white/70 no-underline font-normal
-                       transition-all duration-200 hover:bg-white/[0.1] hover:text-copper-light"
+            className="inline-flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-xl font-semibold no-underline transition-all duration-300 hover:bg-zinc-200"
           >
             📞 {FOOTER.phone}
           </a>
-          <span className="text-xs text-white/20 font-light">{FOOTER.hours}</span>
+          <span className="text-zinc-300 font-medium">{FOOTER.hours}</span>
           <a
             href={FOOTER.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs text-white/30 no-underline
-                       hover:text-copper-light transition-colors duration-200"
+            className="inline-flex items-center gap-1.5 text-white underline hover:text-zinc-300 transition-colors duration-200"
           >
             📍 Google Maps ↗
           </a>
         </div>
 
-        {/* Divider */}
-        <hr className="border-none h-px bg-white/[0.06] mb-6" />
+        <hr className="border-none h-px bg-zinc-800 mb-6" />
 
-        {/* Copyright */}
-        <p className="text-center text-[11px] text-white/20 font-light" data-aos="fade" data-aos-delay="200">
+        <p className="text-center text-xs text-zinc-400 font-light" data-aos="fade" data-aos-delay="200">
           {FOOTER.copyright}
         </p>
       </div>

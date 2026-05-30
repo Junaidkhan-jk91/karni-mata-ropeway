@@ -70,7 +70,7 @@ export default function Preloader() {
       {/* Brand Text */}
       <div className="mt-8 text-center">
         <h2 className="text-white text-base font-semibold tracking-[3px] uppercase">
-          Mansapurna
+          Manshapurn
         </h2>
         <p className="text-[10px] tracking-[5px] uppercase text-copper-light font-medium mt-2 opacity-80">
           Karni Mata Ropeway

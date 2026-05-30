@@ -116,33 +116,21 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Maps banner */}
-        <div
-          className="mt-8 bg-white/[0.04] border border-white/[0.08] rounded-2xl
-                        px-6 py-5 max-w-3xl mx-auto
-                        flex items-center gap-5 flex-wrap sm:flex-nowrap"
+        <div 
+          className="mt-8 overflow-hidden rounded-2xl border border-white/[0.08] shadow-[0_12px_40px_rgba(0,0,0,0.15)] max-w-3xl mx-auto h-[350px]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <div className="w-10 h-10 rounded-full bg-copper/15 flex items-center justify-center
-                          text-lg shrink-0">
-            🗺️
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-sm text-copper-light font-semibold">{mapsBanner.title}</div>
-            <div className="text-xs text-white/30 font-light mt-0.5 truncate">{mapsBanner.subtitle}</div>
-          </div>
-          <a
-            href={mapsBanner.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-copper-light border border-copper/30 px-5 py-2.5 rounded-xl
-                       text-xs font-semibold no-underline whitespace-nowrap
-                       transition-all duration-200 hover:bg-copper/10
-                       max-sm:w-full max-sm:text-center"
-          >
-            View on Maps ↗
-          </a>
+          <iframe
+            title="Manshapurn Karni Mata Ropeway Location Map"
+            src="https://maps.google.com/maps?q=Manshapurn%20Karni%20mata%20Ropeway%20Udaipur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>

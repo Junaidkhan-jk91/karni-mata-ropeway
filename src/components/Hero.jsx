@@ -27,44 +27,6 @@ export default function Hero() {
       />
 
       <ParticlesBackground preset="hero" id="hero-particles" />
-
-      {/* Custom CSS for Hero cable car animations */}
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes ascendHeroGondola {
-          0% {
-            left: -10%;
-            top: 70%;
-          }
-          100% {
-            left: 110%;
-            top: 25%;
-          }
-        }
-        @keyframes descendHeroGondola {
-          0% {
-            left: 110%;
-            top: 25%;
-          }
-          100% {
-            left: -10%;
-            top: 70%;
-          }
-        }
-        .hero-gondola-ascend {
-          position: absolute;
-          animation: ascendHeroGondola 32s linear infinite;
-          transform: translate(-50%, -6px);
-          will-change: left, top;
-        }
-        .hero-gondola-descend {
-          position: absolute;
-          animation: descendHeroGondola 38s linear infinite;
-          animation-delay: -16s; /* offset starts */
-          transform: translate(-50%, -6px);
-          will-change: left, top;
-        }
-      `}} />
-
       {/* SVG Steel Cable Wire */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
         <line x1="-10%" y1="70%" x2="110%" y2="25%" stroke="#ffffff" strokeWidth="1.2" />

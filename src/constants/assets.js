@@ -1,24 +1,27 @@
-/**
- * @file Centralized asset management for all images and external URLs.
- * Client: Replace image URLs here to update the entire site from one location.
- */
+import galleryRopeway1 from '../assets/gallery_ropeway_1.png';
+import galleryViews1 from '../assets/gallery_views_1.png';
+import galleryViews2 from '../assets/gallery_views_2.png';
+import galleryTemple1 from '../assets/gallery_temple_1.jpg';
+import galleryTemple2 from '../assets/gallery_temple_2.jpg';
+import galleryTemple3 from '../assets/gallery_temple_3.jpg';
+import galleryViews3 from '../assets/gallery_views_3.jpg';
 
 /** Gallery image sources — grouped by category for easy management. */
 export const GALLERY_IMAGES_SRC = {
   ropeway: [
-    'https://www.holidify.com/images/cmsuploads/compressed/Mansapurna_Karni_Ropeway_20181127125512.jpg',
-    'https://www.trawell.in/admin/images/upload/Mansapurna_Karni_Mata_Ropeway_Main.jpg',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ce/df/5c/the-mansapurna-karni-mata.jpg?w=1200&h=-1&s=1',
+    galleryRopeway1,  // Authentic TripAdvisor Karni Mata Ropeway cabin view
+    galleryTemple3,  // Clean Aravalli hills wire path view
+    galleryViews1,   // Clean city skyline panoramic overview
   ],
   temple: [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Karni_Mata_Temple%2C_Udaipur.jpg/1280px-Karni_Mata_Temple%2C_Udaipur.jpg',
-    'https://www.udaipurtourism.co.in/images/places-to-visit/headers/karni-mata-temple-udaipur-tourism-entry-fee-timings-holidays-reviews-header.jpg',
-    'https://www.holidify.com/images/cmsuploads/compressed/Karni_Mata_Temple_20200225110544.jpg',
+    galleryTemple1,
+    galleryTemple2,
+    galleryTemple3,
   ],
   views: [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Lake_Pichola_in_Udaipur_03-2016.jpg/1280px-Lake_Pichola_in_Udaipur_03-2016.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Udaipur_City_Palace_from_Lake_Pichola.jpg/1280px-Udaipur_City_Palace_from_Lake_Pichola.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Udaipur_lake_pichola_Sunset.jpg/1280px-Udaipur_lake_pichola_Sunset.jpg',
+    galleryViews1,
+    galleryViews2,
+    galleryViews3,
   ],
 };
 

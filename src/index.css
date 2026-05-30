@@ -97,3 +97,41 @@
   opacity: 0;
 }
 
+/* ── Hero Cable Car Gondola Animations ── */
+@keyframes ascendHeroGondola {
+  0% {
+    left: -10%;
+    top: 70%;
+  }
+  100% {
+    left: 110%;
+    top: 25%;
+  }
+}
+
+@keyframes descendHeroGondola {
+  0% {
+    left: 110%;
+    top: 25%;
+  }
+  100% {
+    left: -10%;
+    top: 70%;
+  }
+}
+
+.hero-gondola-ascend {
+  position: absolute;
+  animation: ascendHeroGondola 32s linear infinite;
+  transform: translate(-50%, -6px);
+  will-change: left, top;
+}
+
+.hero-gondola-descend {
+  position: absolute;
+  animation: descendHeroGondola 38s linear infinite;
+  animation-delay: -16s;
+  transform: translate(-50%, -6px);
+  will-change: left, top;
+}
+
