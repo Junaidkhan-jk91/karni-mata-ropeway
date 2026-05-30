@@ -146,7 +146,6 @@ export const CONTACT = {
     line1: 'Deen Dayal Park',
     line2: 'Doodh Talai, Udaipur',
     state: 'Rajasthan 313001, India',
-    distance: '3 km from Udaipur City Railway Station',
     mapsUrl: EXTERNAL_LINKS.googleMaps,
   },
   mapsBanner: {

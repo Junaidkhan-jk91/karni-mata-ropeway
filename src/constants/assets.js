@@ -33,7 +33,6 @@ export const GALLERY_IMAGES_SRC = {
 
 /** External link URLs */
 export const EXTERNAL_LINKS = {
-  googleMaps:
-    'https://www.google.com/maps/place/Manshapurn+Karni+mata+Ropeway+Udaipur/@24.5661871,73.6850433,17z',
+  googleMaps: 'https://maps.app.goo.gl/QzCCC1SNwpJoQUgX8',
   phone: 'tel:+919829466365',
 };

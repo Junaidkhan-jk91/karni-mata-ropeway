@@ -101,8 +101,6 @@ export default function Contact() {
             </p>
             <p className="mt-3 text-sm text-white/30 font-light leading-relaxed">
               {address.state}
-              <br />
-              {address.distance}
             </p>
             <a
               href={address.mapsUrl}
