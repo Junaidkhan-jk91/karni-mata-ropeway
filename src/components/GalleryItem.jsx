@@ -1,14 +1,12 @@
 import React from 'react';
 
 export default function GalleryItem({ item, onOpen, index }) {
-  const { src, alt, tag, label, tall } = item;
+  const { src, alt, tag, label } = item;
 
   return (
     <div
-      className={`relative overflow-hidden cursor-pointer rounded-2xl group
-                  bg-stone/30 aspect-[4/3]
-                  ${tall ? 'md:row-span-2 md:!aspect-auto' : ''}
-                  max-md:!row-span-1 max-md:!aspect-[4/3]`}
+      className="relative overflow-hidden cursor-pointer rounded-2xl group
+                 bg-stone/30 aspect-[4/3]"
       onClick={() => onOpen(item)}
       role="button"
       tabIndex={0}

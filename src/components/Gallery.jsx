@@ -92,7 +92,7 @@ export default function Gallery() {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 grid-flow-row-dense">
             {visibleItems.map((item, index) => (
               <GalleryItem key={item.src} item={item} onOpen={setLightboxImage} index={index} />
             ))}
