@@ -111,17 +111,15 @@ export const GALLERY_ITEMS = [
 
 /* ─── Tickets ─── */
 export const TICKETS = [
-  { category: 'Indian National', type: 'Adult Ticket', price: 117, note: 'Above 110 cm height limit' },
-  { category: 'Indian National', type: 'Child Ticket', price: 55, note: 'Height limit up to 110 cm' },
-  { category: 'Foreign National', type: 'Adult Ticket', price: 300, note: 'Round trip, per person' },
-  { category: 'Foreign National', type: 'Child Ticket', price: 150, note: 'Round trip, per child' },
+  { category: 'Round Trip', type: 'Adult Ticket', price: 117, note: '' },
+  { category: 'Round Trip', type: 'Child Ticket', price: 55, note: 'Height limit below 110 cm' },
 ];
 
-export const TICKET_SUBTITLE = 'All fares are round trip. Indian tickets require height verification; Foreign national pricing includes international tourist rates.';
+export const TICKET_SUBTITLE = 'All fares are round trip. Height verification is required for children to qualify for the child rate.';
 
 export const CABIN_NOTE = {
-  label: 'Full cabin booking:',
-  text: '₹400 per cabin — ideal for families or groups seeking a private ride.',
+  label: 'Personal Cabin:',
+  text: '₹117 × 6 people = ₹702 — ideal for families or groups seeking a private cabin.',
 };
 
 /* ─── Timings ─── */
@@ -139,10 +137,7 @@ export const TIMINGS = [
     place: 'Temple',
     name: 'Karni Mata Temple',
     rows: [
-      { label: 'Opens:', value: '4:00 AM · Closes: 10:00 PM' },
-      { label: 'Morning darshan:', value: '4:30 – 7:00 AM' },
-      { label: 'Afternoon:', value: '10:30 AM – 1:30 PM' },
-      { label: 'Evening:', value: '5:00 – 7:30 PM' },
+      { label: 'Daily Timings:', value: '5:30 AM – 9:30 PM' },
     ],
   },
 ];
@@ -216,8 +211,8 @@ export const FAQS = [
     answer: 'The temple is located atop the Machala Magra Hill in Udaipur, Rajasthan. The base ropeway station starts from Deendayal Upadhyay Park (Dudh Talai), which is approximately 1.5 to 2 km from the historic Udaipur City Palace.',
   },
   {
-    question: 'What are the timings for the Manshapurn Karni Mata Ropeway?',
-    answer: 'The ropeway cable car operations run daily from 9:00 AM to 9:00 PM. The hilltop Karni Mata Temple itself is open for pilgrims and visitors from 4:00 AM to 10:00 PM daily.',
+    question: 'What are the timings for the Manshapurn Karni Mata Ropeway and Temple?',
+    answer: 'The ropeway cable car operations run daily from 9:00 AM to 9:00 PM. The hilltop Karni Mata Temple itself is open for pilgrims and visitors from 5:30 AM to 9:30 PM daily.',
   },
   {
     question: 'Can I climb the hill instead of taking the ropeway?',
