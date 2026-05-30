@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────
+   Design Tokens — "Warm Luxury" theme with Poppins
+   ───────────────────────────────────────────────────────── */
+@theme {
+  /* Primary — warm copper tones */
+  --color-copper: #B87333;
+  --color-copper-light: #D4A574;
+  --color-copper-pale: #F5EDE4;
+  --color-copper-dark: #8B5E3C;
+
+  /* Secondary — sage/forest green */
+  --color-sage: #7B8F6B;
+  --color-sage-light: #A8B89A;
+  --color-sage-dark: #4A6B4A;
+  --color-sage-pale: #EFF3EC;
+
+  /* Neutrals */
+  --color-ivory: #FAF8F4;
+  --color-cream: #F3EDE4;
+  --color-stone: #E8E2D9;
+  --color-charcoal: #1C1C1C;
+  --color-graphite: #2D2D2D;
+  --color-slate: #64748B;
+  --color-warm-gray: #8B7E74;
+
+  /* Font families — single family for consistency */
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+}
+
+/* ── Base ── */
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    min-width: 320px;
+  }
+
+  ::selection {
+    background-color: var(--color-copper-pale);
+    color: var(--color-charcoal);
+  }
+}
+
+/* ── Custom utilities ── */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-dark {
+    background: rgba(28, 28, 28, 0.82);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
+
+/* ── AOS animation overrides for premium feel ── */
+[data-aos] {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 40px, 0);
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d(0, -30px, 0);
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-30px, 0, 0);
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d(30px, 0, 0);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.92);
+  opacity: 0;
+}
+
