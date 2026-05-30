@@ -14,11 +14,19 @@ import Lightbox from './Lightbox';
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [lightboxImage, setLightboxImage] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  // Reset image count when active category toggles
+  useEffect(() => {
+    setVisibleCount(6);
+  }, [activeCategory]);
 
   const filteredItems =
     activeCategory === 'all'
       ? GALLERY_ITEMS
       : GALLERY_ITEMS.filter((item) => item.category === activeCategory);
+
+  const visibleItems = filteredItems.slice(0, visibleCount);
 
   const closeLightbox = useCallback(() => setLightboxImage(null), []);
 
@@ -85,12 +93,42 @@ export default function Gallery() {
 
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {filteredItems.map((item, index) => (
+            {visibleItems.map((item, index) => (
               <GalleryItem key={item.src} item={item} onOpen={setLightboxImage} index={index} />
             ))}
           </div>
 
-          <p className="mt-6 text-center text-xs text-white/20 font-light" data-aos="fade" data-aos-delay="400">
+          {/* View More / Collapse Button */}
+          {filteredItems.length > 6 && (
+            <div className="flex justify-center mt-12" data-aos="fade-up">
+              {visibleCount < filteredItems.length ? (
+                <button
+                  onClick={() => setVisibleCount((prev) => prev + 6)}
+                  className="bg-transparent border border-white/20 text-white px-8 py-3.5 rounded-xl
+                             text-sm font-semibold tracking-wide cursor-pointer
+                             transition-all duration-300 hover:bg-white/10 hover:border-white/40
+                             hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  View More Photos ↓
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    setVisibleCount(6);
+                    document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="bg-transparent border border-white/20 text-white px-8 py-3.5 rounded-xl
+                             text-sm font-semibold tracking-wide cursor-pointer
+                             transition-all duration-300 hover:bg-white/10 hover:border-white/40
+                             hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  Collapse Photos ↑
+                </button>
+              )}
+            </div>
+          )}
+
+          <p className="mt-8 text-center text-xs text-white/20 font-light" data-aos="fade" data-aos-delay="400">
             Click any photo to enlarge · Share your visit photos on Google Maps
           </p>
         </div>

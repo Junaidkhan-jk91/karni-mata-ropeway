@@ -11,6 +11,7 @@ export const NAV_LINKS = [
   { label: 'Tickets', href: '#tickets' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Timings', href: '#timings' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -80,28 +81,26 @@ export const GALLERY_CATEGORIES = [
 ];
 
 export const GALLERY_ITEMS = [
-  // Ropeway Category (8 Items)
+  // Curated First Mix (9 Items)
+  { src: GALLERY_IMAGES_SRC.views[0], alt: 'Scenic Udaipur overview Lake Pichola from top', category: 'views', tag: 'City views', label: 'Spectacular sunset view of Lake Pichola and the City Palace from the top ropeway platform.' },
   { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Gondola cabin and lake view', category: 'ropeway', tag: 'Ropeway', label: 'Vibrant gondola cabin soaring above the scenic foothills.', tall: true },
+  { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Shri Manshapurn Karni Mata Temple Udaipur', category: 'temple', tag: 'Temple', label: 'Shri Manshapurn Karni Mata Temple standing proudly against the clear sky at the hill summit.' },
+  { src: GALLERY_IMAGES_SRC.views[3], alt: 'Lake Pichola Palace layout', category: 'views', tag: 'City views', label: 'Stunning overhead city perspective focusing on Taj Lake Palace and historical domes.', tall: true },
+  { src: GALLERY_IMAGES_SRC.ropeway[4], alt: 'Detailed view of ropeway cabin', category: 'ropeway', tag: 'Ropeway', label: 'Close-up detail of the modern, robust red enclosed cabin design climbing the peaks.', tall: true },
+  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for pilgrims.', tall: true },
+  { src: GALLERY_IMAGES_SRC.views[2], alt: 'Birdseye view of Lake Pichola and Udaipur skyline', category: 'views', tag: 'City views', label: 'Panoramic aerial view of a gondola passenger cabin gliding over Doodh Talai Lake and the base gardens.' },
   { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Ropeway cable lines and cabins', category: 'ropeway', tag: 'Ropeway', label: 'Gondola passenger cabin gliding smoothly along the robust double-cable path.' },
+  { src: GALLERY_IMAGES_SRC.temple[4], alt: 'Hilltop temple sunset pilgrims', category: 'temple', tag: 'Temple', label: 'Pilgrim assemblies gathering around the hilltop sacred complex in the soft evening light.', tall: true },
+
+  // Remaining Items (14 Items)
   { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Aerial ropeway cabins passing', category: 'ropeway', tag: 'Ropeway', label: 'Passenger cabins passing each other mid-flight over the green valleys.' },
   { src: GALLERY_IMAGES_SRC.ropeway[3], alt: 'Ascending hilltop terminal', category: 'ropeway', tag: 'Ropeway', label: 'Mountaintop perspective of the gondolas ascending towards the Machala Hill summit station.' },
-  { src: GALLERY_IMAGES_SRC.ropeway[4], alt: 'Detailed view of ropeway cabin', category: 'ropeway', tag: 'Ropeway', label: 'Close-up detail of the modern, robust red enclosed cabin design climbing the peaks.', tall: true },
   { src: GALLERY_IMAGES_SRC.ropeway[5], alt: 'Gondola flight over Udaipur', category: 'ropeway', tag: 'Ropeway', label: 'Clean passenger cabin glide presenting standard heights over the foothill pathways.' },
   { src: GALLERY_IMAGES_SRC.ropeway[6], alt: 'Ropeway terminal cabins', category: 'ropeway', tag: 'Ropeway', label: 'Enclosed cable cabins arriving at the hilltop terminal station platforms.' },
   { src: GALLERY_IMAGES_SRC.ropeway[7], alt: 'Cable car under sky', category: 'ropeway', tag: 'Ropeway', label: 'A single red gondola cabin climbing through the blue sky against the hill crest.' },
-
-  // Temple Category (5 Items)
-  { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Shri Manshapurn Karni Mata Temple Udaipur', category: 'temple', tag: 'Temple', label: 'Shri Manshapurn Karni Mata Temple standing proudly against the clear sky at the hill summit.' },
-  { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for pilgrims.', tall: true },
   { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Aravalli Hills view from temple', category: 'temple', tag: 'Temple', label: 'Lush green slopes of the ancient Aravalli Range seen from the hilltop courtyard.' },
   { src: GALLERY_IMAGES_SRC.temple[3], alt: 'White marble shrine Karni Mata', category: 'temple', tag: 'Temple', label: 'Peaceful white marble architecture and holy archways of the temple complex.' },
-  { src: GALLERY_IMAGES_SRC.temple[4], alt: 'Hilltop temple sunset pilgrims', category: 'temple', tag: 'Temple', label: 'Pilgrim assemblies gathering around the hilltop sacred complex in the soft evening light.', tall: true },
-
-  // City Views Category (10 Items)
-  { src: GALLERY_IMAGES_SRC.views[0], alt: 'Scenic Udaipur overview Lake Pichola from top', category: 'views', tag: 'City views', label: 'Spectacular sunset view of Lake Pichola and the City Palace from the top ropeway platform.' },
   { src: GALLERY_IMAGES_SRC.views[1], alt: 'Waterfront City Palace ghats Lake Pichola', category: 'views', tag: 'City views', label: 'Sunset reflections kissing the water along the waterfront ghats and Aravalli horizons.' },
-  { src: GALLERY_IMAGES_SRC.views[2], alt: 'Birdseye view of Lake Pichola and Udaipur skyline', category: 'views', tag: 'City views', label: 'Panoramic aerial view of a gondola passenger cabin gliding over Doodh Talai Lake and the base gardens.' },
-  { src: GALLERY_IMAGES_SRC.views[3], alt: 'Lake Pichola Palace layout', category: 'views', tag: 'City views', label: 'Stunning overhead city perspective focusing on Taj Lake Palace and historical domes.', tall: true },
   { src: GALLERY_IMAGES_SRC.views[4], alt: 'Aravalli horizon sun ray', category: 'views', tag: 'City views', label: 'Glistening water waves of Lake Pichola reflection under the fading afternoon sun rays.' },
   { src: GALLERY_IMAGES_SRC.views[5], alt: 'Udaipur white city panoramic rooftops', category: 'views', tag: 'City views', label: 'White architectural rooftops and heritage blocks outlining the historic City Palace perimeter.' },
   { src: GALLERY_IMAGES_SRC.views[6], alt: 'Lake Pichola wide shoreline view', category: 'views', tag: 'City views', label: 'Wide scenic overlook focusing on the pristine blue waters of Lake Pichola and remote hills.', tall: true },
@@ -209,3 +208,27 @@ export const FOOTER = {
   copyright:
     '© 2025 Manshapurn Karni Mata Ropeway Pvt. Ltd. · Rajasthan\u2019s first gondola ropeway, est. 2008',
 };
+
+/* ─── Frequently Asked Questions (SEO FAQs) ─── */
+export const FAQS = [
+  {
+    question: 'Can I carry heavy luggage inside the ropeway cabin?',
+    answer: 'Only light hand luggage and small backpacks are allowed inside the gondolas for safety and comfort. Large suitcases and heavy bags cannot be accommodated, but secure luggage storage facilities are available at the base ticketing office for a nominal charge.',
+  },
+  {
+    question: 'Is the Machala Hill summit wheelchair accessible?',
+    answer: 'The cable car ride itself is highly suitable for elderly visitors and individuals with minor mobility issues, offering comfortable enclosed seating. However, please note that once you arrive at the hilltop station, there are a few stone stairs to climb to reach the inner temple shrine and main sunset viewing terraces.',
+  },
+  {
+    question: 'What happens in case of bad weather or high winds?',
+    answer: 'Passenger safety is our absolute priority. In the event of heavy rain, thunderstorms, or high wind speeds, ropeway operations are temporarily suspended. During such halts, real-time updates and ticketing options are provided at the base ticket counters.',
+  },
+  {
+    question: 'Is parking available at the base ropeway station?',
+    answer: 'Yes, public parking for two-wheelers and four-wheelers is available near Deendayal Upadhyay Park (Dudh Talai). During peak tourist hours and sunset, spaces can fill up quickly, so taking a local auto-rickshaw or taxi is highly recommended for a hassle-free arrival.',
+  },
+  {
+    question: 'Are cameras and photography permitted inside the temple?',
+    answer: 'Professional cameras and mobile photography are fully permitted on the hilltop sunset viewing terraces, which offer some of the most spectacular panoramas of Lake Pichola. However, photography inside the inner shrine of Shri Manshapurn Karni Mata is strictly prohibited to preserve the sanctity of the temple.',
+  },
+];

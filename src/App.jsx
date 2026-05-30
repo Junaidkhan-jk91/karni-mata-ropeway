@@ -19,6 +19,7 @@ const Tickets = lazy(() => import('./components/Tickets'));
 const Timings = lazy(() => import('./components/Timings'));
 const Contact = lazy(() => import('./components/Contact'));
 const GettingHere = lazy(() => import('./components/GettingHere'));
+const FAQ = lazy(() => import('./components/FAQ'));
 const Footer = lazy(() => import('./components/Footer'));
 
 export default function App() {
@@ -120,6 +121,10 @@ export default function App() {
 
       <Suspense fallback={<SectionSkeleton />}>
         <GettingHere />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton />}>
+        <FAQ />
       </Suspense>
 
       <Suspense fallback={<SectionSkeleton />}>

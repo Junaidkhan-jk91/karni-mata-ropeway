@@ -19,6 +19,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+
+    <!-- Google Structured Data (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Manshapurn Karni Mata Ropeway",
+      "image": "https://www.manshapurnropeway.com/logo.svg",
+      "@id": "https://www.manshapurnropeway.com",
+      "url": "https://www.manshapurnropeway.com",
+      "telephone": "+919829466365",
+      "priceRange": "INR 55 - INR 400",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Deen Dayal Park, Doodh Talai",
+        "addressLocality": "Udaipur",
+        "addressRegion": "Rajasthan",
+        "postalCode": "313001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.5684,
+        "longitude": 73.6896
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+    ],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    }
+    </script>
+
+    <!-- Google Structured Data (JSON-LD) for FAQ Page Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I carry heavy luggage inside the ropeway cabin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only light hand luggage and small backpacks are allowed inside the gondolas for safety and comfort. Large suitcases and heavy bags cannot be accommodated, but secure luggage storage facilities are available at the base ticketing office for a nominal charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Machala Hill summit wheelchair accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cable car ride itself is highly suitable for elderly visitors and individuals with minor mobility issues, offering comfortable enclosed seating. However, please note that once you arrive at the hilltop station, there are a few stone stairs to climb to reach the inner temple shrine and main sunset viewing terraces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens in case of bad weather or high winds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Passenger safety is our absolute priority. In the event of heavy rain, thunderstorms, or high wind speeds, ropeway operations are temporarily suspended. During such halts, real-time updates and ticketing options are provided at the base ticket counters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is parking available at the base ropeway station?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, public parking for two-wheelers and four-wheelers is available near Deendayal Upadhyay Park (Dudh Talai). During peak tourist hours and sunset, spaces can fill up quickly, so taking a local auto-rickshaw or taxi is highly recommended for a hassle-free arrival."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are cameras and photography permitted inside the temple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Professional cameras and mobile photography are fully permitted on the hilltop sunset viewing terraces, which offer some of the most spectacular panoramas of Lake Pichola. However, photography inside the inner shrine of Shri Manshapurn Karni Mata is strictly prohibited to preserve the sanctity of the temple."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="antialiased">
     <div id="root"></div>

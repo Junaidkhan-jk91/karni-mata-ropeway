@@ -5,6 +5,7 @@
 
 import { useState } from 'react';
 import { NAV_LINKS, NAV_PHONE } from '../constants/data';
+import logoImage from '../assets/logo.svg';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,11 +25,16 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="#" className="no-underline group" aria-label="Home">
-          <span className="text-white text-base font-semibold leading-tight block tracking-wide
-                           group-hover:text-copper-light transition-colors duration-300">
-            🚡 Manshapurn
+          <span className="text-white text-lg sm:text-xl md:text-2xl font-bold leading-none tracking-wide
+                           group-hover:text-copper-light transition-colors duration-300 flex items-center gap-2">
+            Manshapurn
+            <img 
+              src={logoImage} 
+              alt="Manshapurn Ropeway Logo" 
+              className="h-6 sm:h-7 md:h-8 w-auto object-contain inline-block filter brightness-0 invert" 
+            />
           </span>
-          <span className="text-[10px] tracking-[3px] uppercase text-white/40 font-light">
+          <span className="text-[10px] sm:text-[11px] tracking-[4px] uppercase text-white/50 font-light block mt-1.5">
             Karni Mata Ropeway
           </span>
         </a>
