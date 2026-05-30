@@ -1,4 +1,8 @@
 import galleryRopeway1 from '../assets/gallery_ropeway_1.png';
+import galleryRopeway2 from '../assets/gallery_ropeway_2.png';
+import galleryRopeway3 from '../assets/gallery_ropeway_3.jpg';
+import galleryRopeway4 from '../assets/gallery_ropeway_4.jpg';
+import galleryRopeway5 from '../assets/gallery_ropeway_5.jpg';
 import galleryViews1 from '../assets/gallery_views_1.png';
 import galleryViews2 from '../assets/gallery_views_2.png';
 import galleryTemple1 from '../assets/gallery_temple_1.jpg';
@@ -9,9 +13,11 @@ import galleryViews3 from '../assets/gallery_views_3.jpg';
 /** Gallery image sources — grouped by category for easy management. */
 export const GALLERY_IMAGES_SRC = {
   ropeway: [
-    galleryRopeway1,  // Authentic TripAdvisor Karni Mata Ropeway cabin view
-    galleryTemple3,  // Clean Aravalli hills wire path view
-    galleryViews1,   // Clean city skyline panoramic overview
+    galleryRopeway1,
+    galleryRopeway2,
+    galleryRopeway3,
+    galleryRopeway4,
+    galleryRopeway5,
   ],
   temple: [
     galleryTemple1,

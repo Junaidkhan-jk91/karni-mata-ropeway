@@ -50,8 +50,11 @@ export default function Contact() {
                             text-xl mb-5">
               📞
             </div>
-            <div className="text-[11px] tracking-[2px] uppercase text-copper-light font-semibold mb-2">
-              Phone
+            <div className="text-[11px] tracking-[2px] uppercase text-copper-light font-semibold mb-1">
+              Contact Person / Enquiry
+            </div>
+            <div className="text-xl font-bold text-white mb-3">
+              Jagdish Sukhawani
             </div>
             <a
               href={phone.href}

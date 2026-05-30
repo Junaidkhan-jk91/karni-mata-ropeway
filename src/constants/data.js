@@ -34,8 +34,8 @@ export const ABOUT = {
   titleEmphasis: 'faith & wonder',
   paragraphs: [
     'The Karni Mata Ropeway is one of the highlights during a visit to Udaipur, the so-called \u201cCity of Lakes\u201d in Rajasthan, India. This ropeway will take you to the top of Machhala Hill, where you will find the Manshapurn Karni Mata Temple as well as a spectacular view over Udaipur.',
-    'The ropeway connects Deendayal Upadhyay Park to the revered temple atop Machala Hill \u2014 transforming what was once an arduous climb into a five-minute flight over Udaipur\u2019s shimmering lakes and royal skyline.',
-    'Built in 2008 under the vision of founder Kailash Khandelwal in collaboration with UIT, it holds the distinction of being Rajasthan\u2019s first gondola ropeway, blending modern engineering with centuries of devotion.',
+    'Udaipur is a city filled with spectacular landmarks and amazing viewpoints. A ride on this ropeway connects Deendayal Upadhyay Park to the revered temple atop Machala Hill \u2014 transforming what was once an arduous climb into a five-minute flight over the shimmering lakes and royal skyline. It holds the distinction of being Rajasthan\u2019s first gondola ropeway, blending modern engineering with centuries of devotion.',
+    'This quick guide includes everything you need to know if you\u2019re planning on taking the Karni Mata Ropeway in Udaipur\u2014including how to get there, what to expect, operational hours, tickets, and insider travel tips.',
   ],
   cards: [
     {
@@ -80,9 +80,11 @@ export const GALLERY_CATEGORIES = [
 ];
 
 export const GALLERY_ITEMS = [
-  { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Red gondola cabin Udaipur Karni Mata Ropeway', category: 'ropeway', tag: 'Ropeway', label: 'A vibrant red gondola cabin gliding smoothly over the slopes with the city skyline of Udaipur stretching behind.', tall: true },
-  { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Manshapurn Karni Mata cable car ascending', category: 'ropeway', tag: 'Ropeway', label: 'Aerial view of a cabin ascending along the robust double-cable line towards the hilltop station.' },
-  { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Lush green Aravalli hills Karni Mata Ropeway', category: 'ropeway', tag: 'Ropeway', label: 'Panoramic landscape of the lush green slopes of the ancient Aravalli hills, viewed directly underneath the wire path.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[0], alt: 'Gondola cabin and lake view', category: 'ropeway', tag: 'Ropeway', label: 'Vibrant gondola cabin soaring above the scenic foothills.', tall: true },
+  { src: GALLERY_IMAGES_SRC.ropeway[1], alt: 'Ropeway cable lines and cabins', category: 'ropeway', tag: 'Ropeway', label: 'Gondola passenger cabin gliding smoothly along the robust double-cable path.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[2], alt: 'Aerial ropeway cabins passing', category: 'ropeway', tag: 'Ropeway', label: 'Passenger cabins passing each other mid-flight over the green valleys.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[3], alt: 'Ascending hilltop terminal', category: 'ropeway', tag: 'Ropeway', label: 'Mountaintop perspective of the gondolas ascending towards the Machala Hill summit station.' },
+  { src: GALLERY_IMAGES_SRC.ropeway[4], alt: 'Detailed view of ropeway cabin', category: 'ropeway', tag: 'Ropeway', label: 'Close-up detail of the modern, robust red enclosed cabin design climbing the peaks.', tall: true },
   { src: GALLERY_IMAGES_SRC.temple[0], alt: 'Shri Manshapurn Karni Mata Temple Udaipur', category: 'temple', tag: 'Temple', label: 'Shri Manshapurn Karni Mata Temple standing proudly against the clear sky at the hill summit.' },
   { src: GALLERY_IMAGES_SRC.temple[1], alt: 'Karni Mata Temple atop Machala Hill', category: 'temple', tag: 'Temple', label: 'Hilltop temple courtyard platform offering a quiet space for visitors and pilgrims.', tall: true },
   { src: GALLERY_IMAGES_SRC.temple[2], alt: 'Aravalli Hills view from temple', category: 'temple', tag: 'Temple', label: 'Lush green slopes and rolling hills of the ancient Aravalli Range as seen from the temple area.' },
