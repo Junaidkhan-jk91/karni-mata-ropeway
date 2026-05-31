@@ -1,0 +1,11 @@
+import{O as e,u as t}from"./index-Dn_3dIMe.js";var n=e();function r({icon:e,label:t,value:r,index:i}){return(0,n.jsxs)(`div`,{className:`group bg-white rounded-2xl p-6
+                    border border-stone/40
+                    shadow-[0_2px_12px_rgba(0,0,0,0.03)]
+                    transition-all duration-300
+                    hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)]
+                    hover:-translate-y-1
+                    flex items-start gap-4`,"data-aos":`fade-up`,"data-aos-delay":i*120,"data-aos-duration":`700`,children:[(0,n.jsx)(`div`,{className:`w-11 h-11 rounded-xl bg-copper-pale flex items-center justify-center
+                      text-lg shrink-0
+                      group-hover:bg-copper group-hover:scale-105
+                      transition-all duration-300`,role:`img`,"aria-hidden":`true`,children:(0,n.jsx)(`span`,{className:`group-hover:grayscale group-hover:brightness-200 transition-all duration-300`,children:e})}),(0,n.jsxs)(`div`,{className:`min-w-0`,children:[(0,n.jsx)(`div`,{className:`text-[10px] tracking-[2px] uppercase text-copper font-semibold mb-1.5`,children:t}),(0,n.jsx)(`p`,{className:`text-sm text-warm-gray leading-[1.7] font-light`,children:r})]})]})}function i(){return(0,n.jsx)(`section`,{className:`py-20 sm:py-24 px-6 sm:px-10 lg:px-16 bg-copper-pale`,children:(0,n.jsxs)(`div`,{className:`max-w-5xl mx-auto`,children:[(0,n.jsxs)(`div`,{className:`max-w-2xl mb-12`,children:[(0,n.jsxs)(`div`,{className:`flex items-center gap-3 mb-4`,"data-aos":`fade-right`,"data-aos-duration":`600`,children:[(0,n.jsx)(`span`,{className:`w-10 h-px bg-copper`}),(0,n.jsx)(`span`,{className:`text-[11px] tracking-[3px] uppercase text-copper font-semibold`,children:`Getting here`})]}),(0,n.jsxs)(`h2`,{className:`font-bold text-charcoal leading-[1.15]
+                         text-2xl sm:text-3xl lg:text-4xl`,"data-aos":`fade-up`,"data-aos-delay":`100`,children:[`Location &`,` `,(0,n.jsx)(`span`,{className:`text-sage-dark italic font-medium`,children:`access`})]})]}),(0,n.jsx)(`div`,{className:`grid md:grid-cols-2 gap-5 max-w-3xl`,children:t.map(({icon:e,label:t,value:i},a)=>(0,n.jsx)(r,{icon:e,label:t,value:i,index:a},t))})]})})}export{i as default};

@@ -1,0 +1,12 @@
+import{O as e,d as t,n}from"./index-Dn_3dIMe.js";var r=e();function i({icon:e,title:t,description:n,index:i}){return(0,r.jsxs)(`div`,{className:`group relative bg-white rounded-2xl p-8 sm:p-9
+                    border border-stone/30
+                    shadow-[0_2px_12px_rgba(0,0,0,0.03)]
+                    transition-all duration-300
+                    hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]
+                    hover:-translate-y-1.5`,"data-aos":`fade-up`,"data-aos-delay":i*150,"data-aos-duration":`700`,children:[(0,r.jsx)(`span`,{className:`absolute top-5 right-7 text-6xl font-bold
+                       text-stone/30 leading-none select-none
+                       group-hover:text-copper/10 transition-colors duration-300`,"aria-hidden":`true`,children:String(i+1).padStart(2,`0`)}),(0,r.jsx)(`div`,{className:`w-12 h-12 rounded-xl bg-copper-pale flex items-center justify-center
+                      text-xl mb-5
+                      group-hover:bg-copper group-hover:scale-110
+                      transition-all duration-300`,role:`img`,"aria-hidden":`true`,children:(0,r.jsx)(`span`,{className:`group-hover:grayscale group-hover:brightness-200 transition-all duration-300`,children:e})}),(0,r.jsx)(`h3`,{className:`text-lg font-semibold text-charcoal mb-2 relative z-10`,children:t}),(0,r.jsx)(`p`,{className:`text-sm text-warm-gray leading-[1.8] font-light relative z-10`,children:n})]})}function a(){return(0,r.jsxs)(`section`,{className:`relative py-20 sm:py-24 px-6 sm:px-10 lg:px-16 bg-cream overflow-hidden`,children:[(0,r.jsx)(n,{preset:`highlights`,id:`highlights-particles`}),(0,r.jsxs)(`div`,{className:`relative z-10 max-w-6xl mx-auto`,children:[(0,r.jsxs)(`div`,{className:`text-center max-w-2xl mx-auto mb-12`,children:[(0,r.jsxs)(`div`,{className:`flex items-center justify-center gap-3 mb-4`,"data-aos":`fade-down`,"data-aos-duration":`600`,children:[(0,r.jsx)(`span`,{className:`w-10 h-px bg-copper`}),(0,r.jsx)(`span`,{className:`text-[11px] tracking-[3px] uppercase text-copper font-semibold`,children:`Why visit`}),(0,r.jsx)(`span`,{className:`w-10 h-px bg-copper`})]}),(0,r.jsxs)(`h2`,{className:`font-bold text-charcoal leading-[1.15]
+                         text-2xl sm:text-3xl lg:text-4xl`,"data-aos":`fade-up`,"data-aos-delay":`100`,children:[`Experiences that`,` `,(0,r.jsx)(`span`,{className:`text-sage-dark italic font-medium`,children:`stay with you`})]})]}),(0,r.jsx)(`div`,{className:`grid md:grid-cols-3 gap-6 lg:gap-8`,children:t.map((e,t)=>(0,r.jsx)(i,{...e,index:t},e.title))})]})]})}export{a as default};
