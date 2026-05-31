@@ -66,7 +66,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-28 pb-12 md:py-0">
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto pt-36 sm:pt-40 pb-12 md:pt-40 md:pb-0">
         <div className="inline-flex items-center gap-3 mb-8" data-aos="fade-down" data-aos-delay="200">
           <span className="w-8 h-px bg-copper-light" />
           <span className="text-copper-light text-[11px] tracking-[4px] uppercase font-medium">

@@ -118,8 +118,8 @@ export const TICKETS = [
 export const TICKET_SUBTITLE = 'All fares are round trip. Height verification is required for children to qualify for the child rate.';
 
 export const CABIN_NOTE = {
-  label: 'Personal Cabin:',
-  text: '₹117 × 6 people = ₹702 — ideal for families or groups seeking a private cabin.',
+  label: 'Personal Cabin — ₹702',
+  text: 'Book a private gondola for your group (6 people max). Ideal for families or groups seeking an exclusive ride.',
 };
 
 /* ─── Timings ─── */

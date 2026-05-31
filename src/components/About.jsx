@@ -34,7 +34,7 @@ function AboutCard({ title, text, index }) {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 sm:py-24 px-6 sm:px-10 lg:px-16 bg-ivory">
+    <section id="about" className="pt-28 sm:pt-32 pb-20 sm:pb-24 px-6 sm:px-10 lg:px-16 bg-ivory">
       <div className="max-w-6xl mx-auto">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-4" data-aos="fade-right" data-aos-duration="600">

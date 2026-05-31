@@ -79,9 +79,16 @@ export default function Tickets() {
                           text-lg shrink-0 mt-0.5">
             🚡
           </div>
-          <div>
-            <strong className="font-semibold text-sage-dark text-sm">{CABIN_NOTE.label}</strong>
-            <span className="text-sm text-warm-gray font-light ml-1">{CABIN_NOTE.text}</span>
+          <div className="flex-1">
+            <div className="flex items-center gap-3 flex-wrap">
+              <strong className="font-semibold text-sage-dark text-sm">{CABIN_NOTE.label}</strong>
+              <span className="inline-block px-2.5 py-0.5 rounded-full bg-sage/15
+                             text-sage-dark text-[10px] tracking-[1.5px] uppercase font-semibold
+                             border border-sage-light/40">
+                6 people max
+              </span>
+            </div>
+            <span className="text-sm text-warm-gray font-light mt-1 block">{CABIN_NOTE.text}</span>
           </div>
         </div>
       </div>
