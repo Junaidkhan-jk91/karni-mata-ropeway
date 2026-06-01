@@ -1,0 +1,6 @@
+# Group 1: All active search engines and crawlers
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://karnimataropeway.com/sitemap.xml
